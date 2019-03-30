@@ -3,7 +3,7 @@
 % 
 %%
 
-clear all
+clear 
 close all
 clc
 
@@ -27,24 +27,13 @@ cd 'functions'
          cd ..
          cd 'Rx'
             [ rt,yOFDMsymbol,yt,yFbeforeEqualizer,yF,yMod,ipModHat,ipBitHat ] = ...
-            Rx( ht,hF,xtPlusCP,nSym,nBitPerSym,nDSC,nFFT,nTap,EsN0dB(ii));
+                     Rx( ht,hF,xtPlusCP,nSym,nBitPerSym,nDSC,nFFT,nTap,EsN0dB(ii));
          cd ..
          [ simBER(ii) ] = simulationBER( ipBit,ipBitHat );
     end
     
     [ theoryBER ] = theoreticalBER( EbN0dB );
-
+    figure
+    BERfigure( EbN0dB,simBER,theoryBER ); 
 cd .. 
-
-figure
-semilogy(EbN0dB,theoryBER,'bs-','LineWidth',2);
-hold on
-semilogy(EbN0dB,simBER,'mx-','LineWidth',2);
-axis([0 35 10^-5 1])
-grid on
-legend('Rayleigh-Theory', 'Rayleigh-Simulation');
-xlabel('Eb/No, dB')
-ylabel('Bit Error Rate')
-title('BER for BPSK using OFDM in a 10-tap Rayleigh channel')
-
 
