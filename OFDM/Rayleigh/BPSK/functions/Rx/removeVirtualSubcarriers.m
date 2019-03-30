@@ -3,9 +3,9 @@
 % 
 %%
 
-function [ yMod ] = removeVirtualSubcarriers( nBitPerSym,yF )
+function [ yMod ] = removeVirtualSubcarriers( nBitPerSym,nVSC,yF )
 
-   yMod = yF(:,[6+[1:nBitPerSym/2] 7+[nBitPerSym/2+1:nBitPerSym] ]); 
+   yMod = yF(:,[nVSC/2+[1:nBitPerSym/2] nVSC/2+1+[nBitPerSym/2+1:nBitPerSym] ]); 
 
 
 
