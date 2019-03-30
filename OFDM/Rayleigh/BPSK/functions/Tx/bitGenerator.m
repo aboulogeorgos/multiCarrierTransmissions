@@ -1,3 +1,8 @@
+%%
+% Copyright 2019, Alexandros-Apostolos A. Boulogeorgos, All rights reserved
+% 
+%%
+
 function [ ipBit ] = bitGenerator( nBitPerSym,nSym )
 
 

@@ -1,3 +1,8 @@
+%%
+% Copyright 2019, Alexandros-Apostolos A. Boulogeorgos, All rights reserved
+% 
+%%
+
 function [ rt,yOFDMsymbol,yt,yFbeforeEqualizer,yF,yMod,ipModHat,ipBitHat ] = Rx( ht,hF,xtPlusCP,nSym,nBitPerSym,nDSC,nFFT,nTap,EsN0dB )
 
     [ rt ] = receivedSignal( ht,xtPlusCP,nSym,nTap,EsN0dB);

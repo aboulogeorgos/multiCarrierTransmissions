@@ -1,3 +1,7 @@
+%%
+% Copyright 2019, Alexandros-Apostolos A. Boulogeorgos, All rights reserved
+% 
+%%
 
 fprintf('____________________________________________________________________________________\n')
 fprintf('| Simulation title: \t %s  | \n', simulationTitle)

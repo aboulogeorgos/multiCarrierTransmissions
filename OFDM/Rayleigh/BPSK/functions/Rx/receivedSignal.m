@@ -1,3 +1,8 @@
+%%
+% Copyright 2019, Alexandros-Apostolos A. Boulogeorgos, All rights reserved
+% 
+%%
+
 function [ yt ] = receivedSignal( ht,xtPlusCP,nSym,nTap,EsN0dB )
 
 % convolution of each symbol with the random channel
