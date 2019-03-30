@@ -7,6 +7,7 @@ clear
 close all
 clc
 
+
 resultsFilename='example1_no_parallel.mat';
 
 tic
