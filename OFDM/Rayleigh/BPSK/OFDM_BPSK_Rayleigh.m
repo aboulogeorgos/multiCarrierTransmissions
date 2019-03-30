@@ -58,6 +58,8 @@ cd ..
 cd 'results'
 save(resultsFilename);
 
+cd ..
+
 toc 
 %delete(myPool);
 %delete(gcp('nocreate')); 

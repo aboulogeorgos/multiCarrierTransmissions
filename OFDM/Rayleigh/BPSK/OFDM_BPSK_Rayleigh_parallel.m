@@ -57,6 +57,8 @@ cd ..
 cd 'results'
 save(resultsFilename);
 
+cd ..
+
 delete(myPool);
 delete(gcp('nocreate')); 
 
