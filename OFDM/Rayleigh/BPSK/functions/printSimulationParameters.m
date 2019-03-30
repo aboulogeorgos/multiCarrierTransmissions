@@ -17,3 +17,5 @@ fprintf('|______________________________________________________________________
 fprintf('| Channel type: \t %s  \t \t \t \t \t \t   | \n', channelType)
 fprintf('| Number of channel Taps: \t %d  \t \t \t \t \t \t   | \n', nTap)
 fprintf('|__________________________________________________________________________________|\n')
+fprintf('| Channel state information: \t %s  \t \t \t \t \t   |   \n', CSItype)
+fprintf('|__________________________________________________________________________________|\n')

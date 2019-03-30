@@ -22,3 +22,5 @@ EbN0dB      = [0:35]; % bit to noise ratio
 channelType = 'Rayleigh';
 % number of Taps
 nTap =10;
+
+CSItype = 'perfect';

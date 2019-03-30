@@ -7,9 +7,7 @@ clear
 close all
 clc
 
-resultsFilename='example1_no_parallel.mat';
-
-tic
+resultsFilename='example1.mat';
 
 cd 'examples';
     example1;
@@ -20,13 +18,13 @@ cd 'functions'
     [ EsN0dB ] = SNRperBit2SNRperSymbol( EbN0dB,nDSC,nFFT );
     [ simBER ] = zeros(size(EsN0dB));
 
-    f = waitbar(0,'0','Name','Please wait...',...
-    'CreateCancelBtn','setappdata(gcbf,''canceling'',1)');
+   % f = waitbar(0,'0','Name','Please wait...',...
+   % 'CreateCancelBtn','setappdata(gcbf,''canceling'',1)');
 
-    setappdata(f,'canceling',0);
-   % myPool = parpool(4);
+  %  setappdata(f,'canceling',0);
+    myPool = parpool(4);
     
-    for ii = 1:length(EbN0dB)
+    parfor ii = 1:length(EbN0dB)
         cd 'Tx'
             [ ipBit,ipMod,ipModMapped,xF,xt,xtPlusCP ] = Tx( nBitPerSym,... 
                                                 nSym,nDSC,nFFT,nVSC,nCP );
@@ -42,11 +40,11 @@ cd 'functions'
                      nTap,EsN0dB(ii));
          cd ..
          [ simBER(ii) ] = simulationBER( ipBit,ipBitHat );
-         if getappdata(f,'canceling')
-            break
-         end
+         %if getappdata(f,'canceling')
+         %   break
+        % end
         % Update waitbar and message
-        waitbar(ii/length(EbN0dB),f,sprintf('%f %%',ii/length(EbN0dB)*100))
+        %waitbar(ii/length(EbN0dB),f,sprintf('%f %%',ii/length(EbN0dB)*100))
     end
     %delete(f)
     [ theoryBER ] = theoreticalBER( EbN0dB );
@@ -57,7 +55,6 @@ cd ..
 cd 'results'
 save(resultsFilename);
 
-toc 
-%delete(myPool);
-%delete(gcp('nocreate')); 
+delete(myPool);
+delete(gcp('nocreate')); 
 
