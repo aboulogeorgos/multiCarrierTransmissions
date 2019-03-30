@@ -26,15 +26,13 @@ cd 'functions'
          cd ..
          [ simBER(ii) ] = simulationBER( ipBit,ipBitHat );
     end
+    
+    [ theoryBER ] = theoreticalBER( EbN0dB );
 
 cd .. 
 
-%simBer = nErr/(nSym*nBitPerSym);
-EbN0Lin = 10.^(EbN0dB/10);
-theoryBer = 0.5.*(1-sqrt(EbN0Lin./(EbN0Lin+1)));
-
 figure
-semilogy(EbN0dB,theoryBer,'bs-','LineWidth',2);
+semilogy(EbN0dB,theoryBER,'bs-','LineWidth',2);
 hold on
 semilogy(EbN0dB,simBER,'mx-','LineWidth',2);
 axis([0 35 10^-5 1])
