@@ -49,7 +49,7 @@ cd 'functions'
         % Update waitbar and message
         waitbar(ii/length(EbN0dB),f,sprintf('%f %%',ii/length(EbN0dB)*100))
     end
-    %delete(f)
+    delete(f)
     [ theoryBER ] = theoreticalBER( EbN0dB );
     figure
     BERfigure( EbN0dB,simBER,theoryBER ); 
@@ -61,6 +61,5 @@ save(resultsFilename);
 cd ..
 
 toc 
-%delete(myPool);
-%delete(gcp('nocreate')); 
+
 
