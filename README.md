@@ -5,6 +5,14 @@ It contains Matlab/Octave code for the simulation of multi-carrier wireless syst
 - System type: SISO
 - Subcarrier modulation type: BPSK
 - Subcarrier channel: Rayleigh
-## Implementations
+
+## Features
+### Implementations
 1. parallel programming
 2. linear programming 
+
+## Support
+If you are having issues, please let us know. We have a mailing list located at: in_development
+
+## Authors
+- Alexandros Apostolos A. Boulogeorgos (e-mail: al.boulogeorgos@ieee.org)
