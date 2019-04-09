@@ -1,6 +1,10 @@
 %%
-% Copyright 2019, Alexandros-Apostolos A. Boulogeorgos, All rights reserved
+% Copyright 2019, Alexandros-Apostolos A. Boulogeorgos. 
+% All rights reserved.
 % 
+%%
+%%
+% Description: This function returns the ammount of errors.
 %%
 
 function [ nErr ] = errorCounter( ipBit,ipBitHat )

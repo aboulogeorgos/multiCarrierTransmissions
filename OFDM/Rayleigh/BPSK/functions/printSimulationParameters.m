@@ -3,6 +3,10 @@
 % 
 %%
 
+%% 
+% Description: This script prints the simmulation parameters.
+%%
+
 fprintf('____________________________________________________________________________________\n')
 fprintf('| Simulation title: \t %s  | \n', simulationTitle)
 fprintf('|__________________________________________________________________________________|\n')

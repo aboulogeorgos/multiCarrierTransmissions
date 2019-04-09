@@ -3,6 +3,10 @@
 % 
 %%
 
+%% 
+% Description: This function calculates the simmulation bit error rate (BER).
+%%
+
 function [ simBER ] = simulationBER( ipBit,ipBitHat )
     [ simBER ] = errorCounter( ipBit,ipBitHat )/length(ipBit);
 
