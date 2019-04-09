@@ -3,10 +3,7 @@
 % 
 %%
 
-%%
-% Description: This function plots the theoretical and simulation bit error
-% rate (BER) in a common figure.
-%%
+
 function [ ] = BERfigure( EbN0dB,simBER,theoryBER )
     semilogy(EbN0dB,theoryBER,'bs-','LineWidth',2);
     hold on
