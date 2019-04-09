@@ -29,7 +29,7 @@ cd 'functions'
          cd ..
          cd 'channel'
             cd (channelType)
-                [ht,hF] = Rayleigh( nTap,nSym );
+                [ht,hF] = Rayleigh( nTap,nSym,nFFT );
             cd ..
          cd ..
          cd 'Rx'
