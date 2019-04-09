@@ -3,7 +3,7 @@
 % 
 %%
 
-function [ m,v ] = channelStatistics( ht,hF )
+function [ mt,vt, mF, vF ] = channelStatistics( ht,hF )
     mt = mean(abs(ht));
     vt = var(abs(ht));
     mF = mean(abs(hF));
