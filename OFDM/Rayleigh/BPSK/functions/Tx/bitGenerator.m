@@ -3,6 +3,10 @@
 % 
 %%
 
+%%
+% This function generates a bit stream.
+%%
+
 function [ ipBit ] = bitGenerator( nBitPerSym,nSym )
 
 
