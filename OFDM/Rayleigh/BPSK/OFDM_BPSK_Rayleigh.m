@@ -18,7 +18,7 @@ cd ..
 
 cd 'functions'
     printSimulationParameters; 
-    [ EsN0dB ] = SNRperBit2SNRperSymbol( EbN0dB,nDSC,nFFT );
+    [ EsN0dB ] = SNRperBit2SNRperSymbol( EbN0dB,nDSC,nFFT,nCP );
     [ simBER ] = zeros(size(EsN0dB));
 
     f = waitbar(0,'0','Name','Please wait...',...
