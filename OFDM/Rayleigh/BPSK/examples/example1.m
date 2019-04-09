@@ -3,6 +3,10 @@
 % 
 %%
 
+%%
+% Description: It contains Example 1 simulation parameters.
+%%
+
 simulationTitle = 'BER of OFDM in Rayleigh enviroment using BPSK modulation';
 
 modulationType = 'BSPK';

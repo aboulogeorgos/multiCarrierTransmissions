@@ -4,6 +4,10 @@ simulationTitle = 'BER of OFDM in Rayleigh enviroment using BPSK modulation';
 % 
 %%
 
+%%
+% Description: It contains Example 2 simulation parameters.
+%%
+
 modulationType = 'BSPK';
 
 nFFT        = 64;   % fft size
