@@ -4,7 +4,7 @@
 %%
 
 %%
-% This function generates a bit stream.
+% Description: This function generates a bit stream.
 %%
 
 function [ ipBit ] = bitGenerator( nBitPerSym,nSym )
