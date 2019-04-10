@@ -29,7 +29,8 @@ cd 'functions'
     
     for ii = 1:length(EbN0dB)
         cd 'Tx'
-            [ ipBit,ipMod,ipModMapped,xF,xt,xtPlusCP ] = Tx( nBitPerSym,... 
+
+            [ ipBit,ipMod,ipModMapped,xF,xt,xtPlusCP ] = Tx( nBitPerSym,  ... 
                                                 nSym,nDSC,nFFT,nVSC,nCP );
          cd ..
          cd 'channel'
