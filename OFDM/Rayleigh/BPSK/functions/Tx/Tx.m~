@@ -9,8 +9,7 @@
 % nDSC: Number of data subcarriers
 % nFFT: Number of subcarriers
 % nVSC: Number of virtual subcarriers
-% nCP: Cyclip prefix length
-%%
+% nCP: Cyclip prefix le
 
 function [ ipBit,ipMod,ipModMapped,xF,xt,xtPlusCP ] = Tx( nBitPerSym,nSym,nDSC,nFFT,nVSC,nCP )
 
