@@ -1,0 +1,34 @@
+fc = 1;
+fcUnits = 'GHz';
+d0 = 1;
+d0Units='m';
+L = 0;
+n = 2;
+d=[0.1:0.1:100];
+dUnits='m';
+
+xl = ['d (', dUnits,')'];
+
+cd ..
+[ PLdB ] = logNormalPathlossModel( fc, fcUnits, d0, d0Units, L, n, d, dUnits );
+cd('Examples')
+
+fc = 1;
+fcUnits = 'GHz';
+d0 = 1;
+d0Units='m';
+L = 0;
+n = 3;
+d=[0.1:0.1:100];
+dUnits='m';
+
+xl = ['d (', dUnits,')'];
+
+cd ..
+[ PLdB ] = logNormalPathlossModel( fc, fcUnits, d0, d0Units, L, n, d, dUnits );
+cd('Examples')
+
+figure
+plot(d,PLdB)
+xlabel(xl)
+ylabel('Path loss (dB)')
