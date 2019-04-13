@@ -1,0 +1,18 @@
+function [ output_args ] = powerSpectalDensity( input_args )
+
+for symIdx = 1:numSymbols
+
+    inpData2 = randi([0 1], bitsPerSubCarrier*L, 1);
+    modData = qamMapper(inpData2);
+
+    symOFDM = [zeros(numGuards,1); modData; zeros(numGuards,1)];
+    ifftOut = sqrt(numFFT).*ifft(ifftshift(symOFDM));
+
+    [specOFDM,fOFDM] = periodogram(ifftOut, rectwin(length(ifftOut)), ...
+        numFFT*2, 1, 'centered');
+    sumOFDMSpec = sumOFDMSpec + specOFDM;
+end
+
+
+end
+
