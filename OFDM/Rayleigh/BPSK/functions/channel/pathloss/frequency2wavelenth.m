@@ -16,7 +16,7 @@ function [ lambda,lambdaUnits ] = frequency2wavelenth( f, units )
         error('Wrong frequency units');
     end
     
-    lambda = c/f;
+    lambda = c./f;
     lambdaUnits = 'm';
 
 end
