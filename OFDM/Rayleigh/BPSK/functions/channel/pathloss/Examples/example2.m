@@ -16,6 +16,8 @@ n = [1.8, 2, 2.5, 3, 3.5, 4]; % pathloss exponent
 d=10;    % transmission distance
 dUnits='m';         % transmission distance unit
 
+sprintf(' Reference distance: %d %s \n Transmission distance %d %s \n Additional losses: %d dB ', d0, d0Units, d, dUnits, L)
+
 
 xl = ['f (', fcUnits,')'];       % x label sting
 yl = 'Path loss (dB)';          % y label sting
