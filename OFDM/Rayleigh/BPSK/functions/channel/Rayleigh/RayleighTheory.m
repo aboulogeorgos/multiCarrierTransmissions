@@ -3,6 +3,15 @@
 % 
 %%
 
+%%
+% Desciption: This function returns the theoretical PDF/CDF value of the
+% Rayleigh distribution.
+% Input:
+%   x: the independent variable of the PDF/CDF
+%   B: the Rayleigh distribution parameter
+%   type: PDF or CDF
+%%
+
 function [ p ] = RayleighTheory( x,B,type )
 
 if strcmp( type,'PDF' )
