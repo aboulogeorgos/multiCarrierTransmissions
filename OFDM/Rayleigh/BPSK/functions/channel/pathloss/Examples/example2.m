@@ -1,3 +1,8 @@
+%%
+% Copyright 2019, Alexandros-Apostolos A. Boulogeorgos, All rights reserved
+% 
+%%
+
 %% 
 % Description: This script plots the expected path losses as a function of the
 % carrier frequency for different values of pathloss exponent using the

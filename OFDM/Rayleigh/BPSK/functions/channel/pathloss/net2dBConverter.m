@@ -3,7 +3,7 @@
 % 
 %%
 
-function [ net ] = dB2netConvertor( dB )
-    net = 10.^(dB/10);
+function [ dB ] = net2dBConverter( net )
+    dB = 10*log10(net);
 end
 

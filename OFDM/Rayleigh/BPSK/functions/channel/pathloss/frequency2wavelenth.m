@@ -1,3 +1,8 @@
+%%
+% Copyright 2019, Alexandros-Apostolos A. Boulogeorgos, All rights reserved
+% 
+%%
+
 function [ lambda,lambdaUnits ] = frequency2wavelenth( f, units )
     
     c = physconst('LightSpeed');

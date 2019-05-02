@@ -1,3 +1,8 @@
+%%
+% Copyright 2019, Alexandros-Apostolos A. Boulogeorgos, All rights reserved
+% 
+%%
+
 function [ PLdB ] = logNormalPathlossModel( fc, fcUnits, d0, d0Units, L, n, d, dUnits )
 
     [ FSL, FSPdB ] = freeSpaceLoss( 0, 0, fc, fcUnits, d0, d0Units, L);

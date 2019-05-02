@@ -1,3 +1,8 @@
+%%
+% Copyright 2019, Alexandros-Apostolos A. Boulogeorgos, All rights reserved
+% 
+%%
+
 function [ PL, PLdB ] = freeSpaceLoss( Gt, Gr, fc, fcUnits, d, dUnits, L)
 % Gt: dB
 % Gr: dB

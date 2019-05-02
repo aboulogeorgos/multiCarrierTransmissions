@@ -1,3 +1,8 @@
+%%
+% Copyright 2019, Alexandros-Apostolos A. Boulogeorgos, All rights reserved
+% 
+%%
+
 function [m,PLdBmeanTheory, v, varTheory] = logNormalwithShadowingVerification( fc, fcUnits, d0, d0Units, L, n, d, dUnits, sigma, Ns, N )
     
     PLdB = zeros(1, Ns);
