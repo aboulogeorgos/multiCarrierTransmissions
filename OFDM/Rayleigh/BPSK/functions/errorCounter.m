@@ -5,6 +5,11 @@
 %%
 %%
 % Description: This function returns the ammount of errors.
+% Inputs:
+%   ipBit:  transmitted Bits
+%   ipBitHat: estimated Bits
+% Outputs:
+%   nErr: number of estimation errors
 %%
 
 function [ nErr ] = errorCounter( ipBit,ipBitHat )
