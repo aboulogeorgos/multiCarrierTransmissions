@@ -5,6 +5,11 @@
 
 %% 
 % Description: This function calculates the simmulation bit error rate (BER).
+% Input:
+%   ipBit:  transmitted bits
+%   ipBitHat: estimated bits
+% Output:
+%   simBER: simulation BER
 %%
 
 function [ simBER ] = simulationBER( ipBit,ipBitHat )
