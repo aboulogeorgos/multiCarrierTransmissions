@@ -5,6 +5,11 @@
 
 %%
 % Description: This function generates a bit stream.
+% Input:
+%  nBitPerSym: number of bits per symbols
+%  nSym: number of symbols
+% Output:
+%  ipBit: transmitted bits vector
 %%
 
 function [ ipBit ] = bitGenerator( nBitPerSym,nSym )
