@@ -4,12 +4,10 @@
 %%
 
 %%
-% Description: 
-%   It evaluates the bit error rate (BER) by employing the theoretical framework.
+% Description: It evaluates the bit error rate (BER) by employing the
+% theoretical framework.
 % Input: 
-%   EbN0dB: SNR in dB
-% Output:
-%   theoryBER: theoretical bit error rate (BER)
+%   EbN0dB: SNR in 
 %%
 
 function [ theoryBER ] = theoreticalBER( EbN0dB )
