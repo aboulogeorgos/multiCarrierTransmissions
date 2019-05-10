@@ -16,6 +16,8 @@ nDSC        = 52;   % number of data subcarriers
 nSymPerOFDMSymbol  = 52;   % number of bits per OFDM symbol (same as the number of subcarriers for BPSK)
 nSym        = 10^4; % number of symbols
 nCP         = 16;   % CP
+nBitPerSym  = nSymPerOFDMSymbol;
+%nSymPerOFDMSymbol = 52;
 
 cd ..
 

@@ -14,7 +14,7 @@
 
 function [ ipBit,ipMod,ipModMapped,xF,xt,xtPlusCP ] = Tx( nBitPerSym,nSym,nDSC,nFFT,nVSC,nCP )
 
-    [ ipBit ] = bitGenerator( nBitPerSym,nSymPerOFDMSymbol,nSym );
+    [ ipBit ] = bitGenerator( nBitPerSym,nSym );
     [ ipMod ] = BPSKmodulator( ipBit ); 
     [ ipModMapped ] = symbolMapping( ipMod,nBitPerSym,nSym );
     [ xF ] = subcarrierMapping( ipModMapped,nSym,nBitPerSym,nVSC );
