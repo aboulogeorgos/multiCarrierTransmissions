@@ -61,6 +61,10 @@ save(resultsFilename);
 
 cd ..
 
+cd 'functions'
+    printSimulationResults
+cd ..
+
 toc 
 
 
