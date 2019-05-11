@@ -1,0 +1,13 @@
+function [ ht, h ] = channelCoefficient( m,omega,L,nTap )
+
+[ R ] = nakagami_m_RV( m,omega,L,nTap );
+[ phi ] = uniform_RV( L,nTap );
+
+ht = R .* exp(1i*phi);
+
+% computing and storing the frequency response of the channel, for use at recevier
+hF = fftshift(fft(ht,Nfft,2));
+
+
+end
+
