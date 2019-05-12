@@ -1,0 +1,13 @@
+function [ mod ] = MQAMmodulator( bits,M, symbolOrder )
+
+    k = log2(M); % number of bits per symbols
+    
+    if k-ceil(k)~=0
+        error('The value of M is only acceptable if log_2(M) is an integer');
+    end
+    
+    bitsP = reshape(bits, k, length(bits)/k); % bits mapping to symbols
+    
+    mod = qammod(bitsP, M, '''InputType', 'bit', 'UnitAveragePowe',1);
+end
+
